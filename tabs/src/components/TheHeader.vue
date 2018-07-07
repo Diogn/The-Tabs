@@ -14,8 +14,8 @@
         Sign Up
       </v-btn>
       <v-btn flat dark
-      v-on:click="goBack">
-        GoBack!
+      @click="navigateTo({name: 'login'})">
+        Login
       </v-btn>
     </v-toolbar-items>
   </v-toolbar>
@@ -26,11 +26,6 @@ export default {
   methods: {
     navigateTo (route) {
       this.$router.push(route)
-    },
-    goBack () {
-      window.history.length > 1
-      ? this.$router.go(-1)
-      : this.$router.push('/')
     }
   }
 }

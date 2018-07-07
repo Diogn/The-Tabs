@@ -1,10 +1,10 @@
 <template>
-  <v-layout>
+<v-layout>
     <v-flex xs6 offset-xs3>
       <div class="white elevation-2">
-        <v-toolbar flat dense dark class="indigo darken-1">
+        <v-toolbar flat dense dark class="orange">
           <v-toolbar-title>
-            Register
+            Login
           </v-toolbar-title>
         </v-toolbar>
 
@@ -25,9 +25,9 @@
           <div class="error" v-html="error"></div>
           <br>
           <v-btn dark
-            class="indigo darken-1"
-            @click= "register">
-            register
+            class="orange"
+            @click= "login">
+            Login
           </v-btn>
         </div>
       </div>
@@ -38,7 +38,7 @@
 <script>
 import AuthenticationService from '@/services/AuthenticationService'
 export default {
-  name: 'Register',
+  name: 'Login',
   data () {
     return {
       email: '',
@@ -47,9 +47,9 @@ export default {
     }
   },
   methods: {
-    async register () {
+    async login () {
       try {
-        await AuthenticationService.register({
+        await AuthenticationService.login({
           email: this.email,
           password: this.password
         })
@@ -59,11 +59,9 @@ export default {
     }
   }
 }
+
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.error {
-  color: red;
-}
+
 </style>
