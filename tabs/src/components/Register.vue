@@ -9,18 +9,21 @@
         </v-toolbar>
 
         <div class="pl-4 pr-4 pt-2 pb-2">
-          <v-text-field
-            label="Email@gmail.com"
-            type="email"
-            v-model="email"
-            single-line
-          ></v-text-field>
-          <v-text-field
-            label="Password"
-            type="password"
-            v-model="password"
-            single-line
-          ></v-text-field>
+          <form autocomplete="off"
+            name="the-tabs-tracker">
+            <v-text-field
+              label="Email@gmail.com"
+              type="email"
+              v-model="email"
+              single-line
+            ></v-text-field>
+            <v-text-field
+              label="Password"
+              type="password"
+              v-model="password"
+              single-line
+            ></v-text-field>
+          </form>
 
           <div class="error" v-html="error"></div>
           <br>
