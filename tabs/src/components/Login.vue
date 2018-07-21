@@ -1,5 +1,5 @@
 <template>
-<v-layout>
+  <v-layout>
     <v-flex xs6 offset-xs3>
       <div class="white elevation-2">
         <v-toolbar flat dense dark class="orange">
