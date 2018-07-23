@@ -5,13 +5,13 @@
       @click="navigateTo({name: 'home'})">
         THE TABS
       </span>
-      <v-btn flat dark
-      @click="navigateTo({name: 'songs'})">
-        Browse
-      </v-btn>
     </v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items>
+      <v-btn flat dark
+        @click="navigateTo({name: 'songs'})">
+        Browse
+      </v-btn>
       <v-btn flat dark
       v-if="!$store.state.isUserLoggedIn"
       @click="navigateTo({name: 'register'})">
