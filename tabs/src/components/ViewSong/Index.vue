@@ -58,7 +58,6 @@ textarea {
 .song {
   overflow: hidden;
   height: 330px;
-  padding: 20px;
 }
 .album-image {
   width: 100%;
