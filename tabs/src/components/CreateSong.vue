@@ -117,7 +117,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 #app {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
