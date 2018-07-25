@@ -15,6 +15,11 @@ export default {
   components: {
     SongsPanel, SongsSearchPanel
   },
+  data() {
+    return {
+      songs: null
+    }
+  },
   async mounted () {
     this.songs = (await SongsService.index()).data
   }

@@ -46,32 +46,5 @@ export default {
 </script>
 
 <style scoped>
-textarea {
-  width: 100%;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  border: none;
-  border-style: none;
-  border-color: transparent;
-  overflow: auto;
-  padding: 20px;
-}
-.song {
-  overflow: hidden;
-  height: 330px;
-}
-.album-image {
-  width: 100%;
-  margin: 0 auto;
-}
-.song-title {
-  font-size: 30px;
-}
 
-.song-artist {
-  font-size: 24px;
-}
-
-.song-genre {
-  font-size: 18px;
-}
 </style>
