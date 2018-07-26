@@ -66,7 +66,7 @@ export default {
     ])
   },
   watch: {
-    async song () {
+    async song (value) {
       if (!this.isUserLoggedIn) {
         return
       }

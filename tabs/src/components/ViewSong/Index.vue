@@ -32,7 +32,7 @@ import SongsService from '@/services/SongsService'
 export default {
   data () {
     return {
-      song: null
+      song: {}
     }
   },
   async mounted () {
