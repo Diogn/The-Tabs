@@ -57,7 +57,7 @@ export default {
   ],
   data () {
     return {
-      bookmark: false
+      bookmark: null
     }
   },
   computed: {
@@ -67,7 +67,7 @@ export default {
     ])
   },
   watch: {
-    async song (value) {
+    async song () {
       if (!this.isUserLoggedIn) {
         return
       }
@@ -108,21 +108,23 @@ export default {
 
 <style scoped>
 .song {
-  padding: 20px;
+  padding: 20px 20px;
   height: 320px;
   overflow: hidden;
+  margin: 20px;
 }
 .song-title {
   font-size: 30px;
+  font-weight: 700;
+  text-transform: capitalize;
 }
 .song-artist {
   font-size: 24px;
+  font-weight: 500;
+  Text-transform: capitalize;
 }
 .song-genre {
-  font-size: 18px;
-}
-.album-image {
-  width: 100%;
-  margin: 0 auto;
+  font-size: 22px;
+  text-transform: capitalize;
 }
 </style>

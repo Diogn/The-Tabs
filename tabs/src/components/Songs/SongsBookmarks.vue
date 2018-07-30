@@ -35,7 +35,7 @@ export default {
         }
       ],
       pagination: {
-        sortBy: 'date',
+        sortBy: 'createAt',
         descending: true
       },
       bookmarks: []
